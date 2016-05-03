@@ -45,6 +45,6 @@ if (env === 'production') {
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.NoErrorsPlugin(),
         new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin({minimize: true, sourceMap: true})
+        new webpack.optimize.UglifyJsPlugin({minimize: true, sourceMap: true, compress: { warnings: false } })
     );
 }
